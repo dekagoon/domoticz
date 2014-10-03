@@ -140,6 +140,7 @@ const char *Hardware_Type_Desc(int hType)
 		{ HTYPE_Domoticz,			"Domoticz - Remote Server" },
 		{ HTYPE_P1SmartMeter,		"P1 Smart Meter USB" },
 		{ HTYPE_P1SmartMeterLAN,	"P1 Smart Meter with LAN interface" },
+		{ HTYPE_Mochad, "Mochad CM15Pro bridge with LAN interface" },
 		{ HTYPE_YouLess,			"YouLess Meter with LAN interface" },
 		{ HTYPE_TE923,				"TE923 USB Compatible Weather Station" },
 		{ HTYPE_Rego6XX,			"Rego 6XX USB/serial interface" },

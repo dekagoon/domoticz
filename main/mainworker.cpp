@@ -15,6 +15,7 @@
 #include "../hardware/P1MeterBase.h"
 #include "../hardware/P1MeterSerial.h"
 #include "../hardware/P1MeterTCP.h"
+#include "../hardware/MochadTCP.h"
 #include "../hardware/YouLess.h"
 #ifdef WITH_LIBUSB
 	#include "../hardware/TE923.h"

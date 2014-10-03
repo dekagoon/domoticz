@@ -78,6 +78,7 @@ enum _eHardwareTypes {
 	HTYPE_ForecastIO,			//25
 	HTYPE_SolarEdgeTCP,			//26
 	HTYPE_SMASpot,				//27
+	HTYPE_Mochad,				//37
 	HTYPE_END
 };
 

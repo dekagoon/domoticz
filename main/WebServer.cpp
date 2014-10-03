@@ -371,7 +371,7 @@ void CWebServer::CmdAddHardware(Json::Value &root)
 		{
 		}
 	}
-	else if ((htype == HTYPE_RFXLAN)||(htype == HTYPE_P1SmartMeterLAN)||(htype == HTYPE_YouLess)||(htype == HTYPE_RazberryZWave)||(htype == HTYPE_OpenThermGatewayTCP)||(htype == HTYPE_LimitlessLights)||(htype == HTYPE_SolarEdgeTCP)) {
+	else if ((htype == HTYPE_RFXLAN)||(htype == HTYPE_P1SmartMeterLAN)||(htype == HTYPE_YouLess)||(htype == HTYPE_RazberryZWave)||(htype == HTYPE_OpenThermGatewayTCP)||(htype == HTYPE_LimitlessLights)||(htype == HTYPE_SolarEdgeTCP||(htype == HTYPE_MochadTCP)) {
 		//Lan
 		if (address=="")
 			return;
@@ -472,7 +472,7 @@ void CWebServer::CmdUpdateHardware(Json::Value &root)
 	{
 		//USB
 	}
-	else if ((htype == HTYPE_RFXLAN)||(htype == HTYPE_P1SmartMeterLAN)||(htype == HTYPE_YouLess)||(htype == HTYPE_RazberryZWave)||(htype == HTYPE_OpenThermGatewayTCP)||(htype == HTYPE_LimitlessLights)||(htype == HTYPE_SolarEdgeTCP)) {
+	else if ((htype == HTYPE_RFXLAN)||(htype == HTYPE_P1SmartMeterLAN)||(htype == HTYPE_YouLess)||(htype == HTYPE_RazberryZWave)||(htype == HTYPE_OpenThermGatewayTCP)||(htype == HTYPE_LimitlessLights)||(htype == HTYPE_SolarEdgeTCP||(htype == HTYPE_MochadTCP)) {
 		//Lan
 		if (address=="")
 			return;
@@ -2299,6 +2299,7 @@ void CWebServer::HandleCommand(const std::string &cparam, Json::Value &root)
 				_eHardwareTypes Type=(_eHardwareTypes)atoi(sd[2].c_str());
 				switch (Type)
 				{
+				case HTYPE_Mochad:
 				case HTYPE_RFXLAN:
 				case HTYPE_RFXtrx315:
 				case HTYPE_RFXtrx433:

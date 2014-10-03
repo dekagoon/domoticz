@@ -16,6 +16,7 @@ class CDomoticzHardwareBase
 	friend class P1MeterBase;
 	friend class P1MeterSerial;
 	friend class P1MeterTCP;
+	friend class MochadTCP;
 	friend class RFXComSerial;
 	friend class RFXComTCP;
 	friend class CYouLess;
